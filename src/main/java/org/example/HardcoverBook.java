@@ -12,7 +12,14 @@ public class HardcoverBook extends Book{
             }
             this.numberOfPages = numberOfPages;
         } catch (InvalidBookException e){
-            System.out.println("This book has caused an error: "+e);
+            System.out.println("Hardcover book has caused an error: "+e);
         }
+    }
+
+    public int getNumberOfPages() {
+        return numberOfPages;
+    }
+    public void setNumberOfPages(int numberOfPages) {
+        this.numberOfPages = numberOfPages;
     }
 }
