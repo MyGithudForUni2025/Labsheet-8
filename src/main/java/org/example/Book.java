@@ -32,6 +32,6 @@ public abstract class Book {
     }
 
     public String toString() {
-        return "\nTitle: "+title+"\nAuthor: "+author+"\nGenre"+genre;
+        return "\n\nTitle: "+title+"\nAuthor: "+author+"\nGenre: "+genre;
     }
 }
