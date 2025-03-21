@@ -15,7 +15,14 @@ public class HardcoverBook extends Book{
         return numberOfPages;
     }
     public void setNumberOfPages(int numberOfPages) {
-        this.numberOfPages = numberOfPages;
+        try {
+            if (numberOfPages < 1){
+                throw new InvalidBookException();
+            }
+            this.numberOfPages = numberOfPages;
+        } catch (InvalidBookException e){
+            System.out.println(e);
+        }
     }
 
     public String toString() {
