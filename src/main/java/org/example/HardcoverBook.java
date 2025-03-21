@@ -22,4 +22,8 @@ public class HardcoverBook extends Book{
     public void setNumberOfPages(int numberOfPages) {
         this.numberOfPages = numberOfPages;
     }
+
+    public String toString() {
+        return super.toString()+"\nNumber of pages: "+numberOfPages;
+    }
 }

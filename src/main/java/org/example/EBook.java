@@ -21,4 +21,8 @@ public class EBook extends Book{
     public void setFileSizeMB(double fileSizeMB) {
         this.fileSizeMB = fileSizeMB;
     }
+
+    public String toString() {
+        return super.toString()+"\nFile size of E-Book: "+fileSizeMB+"MB";
+    }
 }
